@@ -21,29 +21,3 @@ const ProjectCard = ({ title, img, description, journal, url }) => (
     </div>
   </a>
 );
-
-export default class Projects extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-  render() {
-    return (
-      <div className="uk-section">
-        <h2 className="uk-heading-line uk-text-center uk-text-bold">
-          <span>Relevant Projects</span>
-        </h2>
-        {this.props.projects.map((project, idx) => {
-          return (
-            <ProjectCard
-              title={project.title}
-              img={project.img}
-              description={project.description}
-              journal={project.journal}
-              url={project.url}
-            />
-          );
-        })}
-      </div>
-    );
-  }
-}

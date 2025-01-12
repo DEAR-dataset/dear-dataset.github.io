@@ -1,8 +1,9 @@
 import React from 'react';
 import Authors from '../components/authors.jsx';
 import { render } from 'react-dom';
-import { FaGithub, FaYoutube, FaFilePdf } from 'react-icons/fa6';
+import { FaGithub, FaDatabase, FaYoutube, FaFilePdf } from 'react-icons/fa6';
 import { FiGithub } from 'react-icons/fi';
+import { FiDatabase } from 'react-icons/fi';
 import { SiArxiv } from 'react-icons/si';
 import { Icon } from '@iconify/react';
 
@@ -23,6 +24,7 @@ class ResourceBtn extends React.Component {
     this.icons = {
       paper: FaFilePdf,
       arxiv: SiArxiv,
+      data: FaDatabase,
       code: FaGithub,
       video: FaYoutube,
       huggingface: HuggingFace,

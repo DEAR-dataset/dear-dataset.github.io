@@ -7,14 +7,13 @@ export default class Authors extends React.Component {
   }
 
   render() {
-    const columnMaxLen =
-      this.props.authors.length > 4 ? 3 : this.props.authors.length;
-    const authorClass = `uk-width-1-${columnMaxLen} uk-width-1-${this.props.authors.length}@m`;
-    const affliationClass = `uk-width-1-${this.props.affiliations.length} uk-margin-small-top`;
+    // 1 column on mobile, 3 on medium screens and up
+    const authorClass = 'uk-width-1-1 uk-width-1-3@m';
+    const affliationClass = `uk-width-1-1`;
     return (
       <div>
         <div
-          className="uk-text-primary uk-text-center uk-flex-center uk-grid-collapse"
+          className="uk-text-primary uk-text-center uk-flex-center uk-grid-collapse uk-margin-small-top"
           data-uk-grid
         >
           {this.props.authors.map((author, idx) => {
@@ -29,7 +28,7 @@ export default class Authors extends React.Component {
           })}
         </div>
         <div
-          className="uk-text-primary uk-text-center uk-grid-collapse"
+          className="uk-text-primary uk-text-center uk-grid-collapse uk-margin-small-top"
           data-uk-grid
         >
           {this.props.affiliations.map((affiliation, idx) => {
@@ -40,7 +39,9 @@ export default class Authors extends React.Component {
               </span>
             );
           })}
-          <span className="uk-width-1-1">{this.props.meta}</span>
+          <span className="uk-width-1-1 uk-margin-small-top">
+            {this.props.meta}
+          </span>
         </div>
       </div>
     );
