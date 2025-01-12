@@ -1,0 +1,73 @@
+theme: default # default || dark
+organization: Lucerne University of Applied Sciences and Arts
+twitter: null
+title: Evaluation of Deep Audio Representations for Hearables
+journal: "ICASSP'25"
+resources:
+  paper: https://openreview.net/
+  arxiv: null
+  code: https://github.com/
+  data: https://zenodo.com/
+  video: null
+  demo: null
+  huggingface: null
+description: Deep Evaluation of Audio Representations (DEAR), the first dataset and benchmark to evaluate the efficacy in capturing essential acoustic properties for hearables.
+
+image: null
+url: https://dear-dataset.github.io
+speakerdeck: # speakerdeck slide ID
+authors:
+  - name: Fabian Gröger*
+    affiliation: [1, 3]
+    url: https://fabiangroeger96.github.io/
+    position: PhD Student
+  - name: Pascal Baumann*
+    affiliation: [1]
+    position: Researcher
+    url: https://www.hslu.ch/de-ch/hochschule-luzern/ueber-uns/personensuche/profile/?pid=5084
+  - name: Ludovic Amruthalingam
+    affiliation: [1]
+    position: Researcher
+    url: https://www.hslu.ch/en/lucerne-university-of-applied-sciences-and-arts/about-us/people-finder/profile/?pid=5381
+  - name: Laurent Simon
+    affiliation: [2]
+    position: Industry Researcher
+  - name: Ruksana Giurda
+    affiliation: [2]
+    position: Industry Researcher
+  - name: Simone Lionetti
+    affiliation: [1]
+    position: Researcher
+    url: https://www.hslu.ch/en/lucerne-university-of-applied-sciences-and-arts/about-us/people-finder/profile/?pid=4484
+affiliations:
+  - Lucerne University of Applied Sciences and Arts
+  - Sonova AG
+  - University of Basel
+meta:
+  - '*These authors have contributed equally.'
+bibtex: >
+  @article{groger_evaluation_2025,
+    title        = {{Evaluation of Deep Audio Representations for Hearables}},
+    author       = {Gr\"oger, Fabian and Baumann, Pascal and Amruthalingam, Ludovic and Simon, Laurent and Giurda, Ruksana and Lionetti, Simone},
+    year         = 2025,
+    month        = {4},
+    journal      = {IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP)},
+  }
+
+teaser: null
+abstract: |
+  Effectively steering hearable devices requires understanding the acoustic environment around the user.
+  In the computational analysis of sound scenes, foundation models have emerged as the state of the art to produce high-performance, robust, multi-purpose audio representations.
+  We introduce and release Deep Evaluation of Audio Representations (DEAR), the first dataset and benchmark to evaluate the efficacy of foundation models in capturing essential acoustic properties for hearables. 
+  The dataset includes 1,158 audio tracks, each 30 seconds long, created by spatially mixing proprietary monologues and dialogues with commercial, high-quality recordings of everyday acoustic scenes.
+  Our benchmark encompasses eight tasks that assess the general context, speech sources, and technical acoustic properties of the audio scenes. 
+  Through our evaluation of four general-purpose audio representation models, we demonstrate that the BEATs model significantly surpasses its counterparts. 
+  This superiority underscores the advantage of models trained on diverse audio collections, confirming their applicability to a wide array of auditory tasks, including encoding the environment properties necessary for hearable steering.
+
+body: null
+projects: # relevant projects
+  - title: Intrinsic Self-Supervision for Data Quality Audits
+    description: 🧼🔎 A holistic self-supervised data cleaning strategy to detect irrelevant samples, near duplicates and label errors
+    img: https://selfclean.github.io/assets/SelfClean_Teaser.png
+    journal: "NeurIPS'24"
+    url: https://selfclean.github.io/
