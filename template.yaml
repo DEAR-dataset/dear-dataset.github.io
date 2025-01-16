@@ -6,7 +6,7 @@ journal: "ICASSP'25"
 resources:
   paper: https://openreview.net/
   arxiv: null
-  data: https://github.com/
+  data: https://doi.org/10.5281/zenodo.14646594
   code: https://github.com/
   video: null
   demo: null
