@@ -4,8 +4,8 @@ twitter: null
 title: Evaluation of Deep Audio Representations for Hearables
 journal: "ICASSP'25"
 resources:
-  paper: https://openreview.net/
-  arxiv: null
+  paper: null
+  arxiv: https://arxiv.org/abs/2502.06664
   data: https://doi.org/10.5281/zenodo.14646594
   code: https://github.com/DEAR-dataset/code
   video: null
